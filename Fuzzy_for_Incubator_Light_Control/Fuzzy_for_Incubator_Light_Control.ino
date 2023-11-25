@@ -88,6 +88,7 @@ void printInAndOut(){
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
+  Serial2.being(9600);
   Wire.begin();
   lightMeter.begin(BH1750::CONTINUOUS_HIGH_RES_MODE_2);
   pinMode(enA, OUTPUT);
